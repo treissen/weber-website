@@ -1,17 +1,23 @@
-.wrapper {
+/* .wrapper {
   display: grid;
-  grid-template-columns: 1fr min(150ch, calc(100% - 64px)) 1fr;
+  grid-template-columns: 1fr min(85ch, calc(100% - 64px)) 1fr;
   grid-column-gap: 32px;
-}
-.wrapper > * {
+} */
+/* .wrapper > * {
   grid-column: 2;
   border: black solid 1px;
-}
-.full-bleed {
+} */
+/* .full-bleed {
   width: 100%;
   grid-column: 1 / -1;
-}
+} */
 /* above is from https://www.joshwcomeau.com/css/full-bleed/  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
 
 header, footer {
   
@@ -26,30 +32,58 @@ header, footer {
 }
 
 header {
+  font-size: larger;
   position: sticky;
   padding: 10px;
+  height: 100px;
 }
 
 .headerRight {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 15px;
   margin-right: 8px;
 }
 footer {
+  margin-left: 0;
   justify-self: center;
   gap: 25px;
   position: absolute;
   bottom: 0;
-  width: min(150ch, calc(100% - 64px));
+  width: 100vw;
+  height: 45px;
   justify-content: center;
 }
 
 
 .logo {
-  height: 50px;
+  height: 80px;
 }
 h1 {
   text-align: center;
   font-size: 30px;
+  margin-top: 25px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 25px;
+  max-width: 85vw;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container {
+  width: 85ch;
+  right: 0;
 }
