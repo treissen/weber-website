@@ -55,7 +55,6 @@ footer {
   justify-content: center;
 }
 
-
 .logo {
   height: 80px;
 }
@@ -76,6 +75,7 @@ h1 {
 .sidebar {
   display: flex;
   flex-direction: column;
+  min-width: fit-content;
   
 }
 .links {
@@ -86,4 +86,8 @@ h1 {
 .info-container {
   width: 85ch;
   right: 0;
+}
+.home-screen {
+  display: flex;
+  justify-content: center;
 }
