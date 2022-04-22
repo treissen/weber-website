@@ -18,6 +18,7 @@
   padding: 0;
   
 }
+
 body {
   height: 100%;
 }
@@ -57,7 +58,12 @@ header {
   width: 100%;
   margin-bottom: 100px;
 }
-
+.headerRight > a:visited {
+  color: white;
+}
+.headerRight > a {
+  color: white;
+}
 .headerRight {
   display: flex;
   justify-content: flex-end;
@@ -83,7 +89,6 @@ footer > a:visited {
 footer > a:hover {
   color: aqua;
 }
-
 
 .logo {
   height: 80px;
