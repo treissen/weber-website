@@ -35,8 +35,6 @@ html {
 .wrapper {
  margin-bottom: 45px;
 }
-
-
 header, footer {
   
   color: white;
@@ -73,22 +71,26 @@ header {
 footer {
   margin-left: 0;
   justify-self: center;
-  gap: 25px;
   position: fixed;
   bottom: 0;
   width: 100vw;
   height: 45px;
   justify-content: center;
 }
-footer > a {
+.footerCenter{
+  display: flex;
+  gap: 25px;
+}
+.footerCenter > a {
   color: white;
 }
-footer > a:visited {
+.footerCenter > a:visited {
   color: white;
 }
-footer > a:hover {
+.footerCenter > a:hover {
   color: aqua;
 }
+
 
 .logo {
   height: 80px;
