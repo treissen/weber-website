@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src=""script.js defer></script>
     <title>Weber MAD</title>
 </head>
 <body>
     
-    <main class="wrapper">
+    <main class="wrapper" >
 
         <header>
             <div class="headerLeft"><img class="logo" src="images/logo-white.png" alt=""></div>
             <div class="headerRight">
-                <a>Maps</a>
-                <a>Employment</a>
                 <a>About</a>
-                <a>Services</a>
+                <a>Employment</a>
                 <a>Education</a>
+                <a>Maps</a>
+                <a>Services</a>
             </div>
         </header>
         <div class="title">
@@ -48,17 +49,17 @@
         </div>
         <div class="photo-wrapper">
             <div class="photo-squares">
-                <div class="photo-box">
-                    <img src="images/ogden-valley.JPG" alt="ogden valley" class="box-photo">
-                    <div class="photo-desc">Ogden Valley</div>
+                <div class="photo-box" onclick="opemImg()">
+                    <div class="photo-desc">West Nile Virus</div>
+                    <img src="images/know-the-risks-pic.png" alt="know the risk" class="box-photo" onclick="window.open('docs/know-the-risks.pdf')">
                 </div>
                 <div class="photo-box">
-                    <img src="images/snow-basin-road.JPG" alt="Old Snowbasin rd" class="box-photo">
-                    <div class="photo-desc">Old Snowbasin Road</div>
+                    <div class="photo-desc">Product Labels</div>
+                    <img src="images/labels-pic.jpeg" alt="product labels" class="box-photo">
                 </div>
                 <div class="photo-box">
-                    <img src="images/ogden-bay.JPG" alt="Ogden Bay WMA" class="box-photo">
-                    <div class="photo-desc">Ogden Bay WMA</div>
+                    <div id="lifeCycle" class="photo-desc">Mosquito Life Cycle</div>
+                    <img src="images/life-cycle.png" alt="mosquito life cycle" class="box-photo" onclick="window.open(this.src)">
                 </div>
     
             </div>
