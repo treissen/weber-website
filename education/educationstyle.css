@@ -18,6 +18,7 @@
     padding: 0;
     
   }
+  
   body {
     height: 100%;
   }
@@ -57,7 +58,12 @@
     width: 100%;
     margin-bottom: 100px;
   }
-  
+  .headerRight > a:visited {
+    color: white;
+  }
+  .headerRight > a {
+    color: white;
+  }
   .headerRight {
     display: flex;
     justify-content: flex-end;
@@ -154,7 +160,7 @@
     text-indent: 30px;
     font-size: 18px;
   }
-  .home-screen {
+  .screen {
     display: flex;
     justify-content: center;
   }
