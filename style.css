@@ -151,6 +151,17 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
+.links > a:hover {
+  color: rgb(115, 121, 119);
+}
+.publicInfo {
+  display: flex;
+  flex-direction: column;
+}
+.districtInfo {
+  display: flex;
+  flex-direction: column;
+}
 
 .info-container {
   width: 85ch;
@@ -169,13 +180,11 @@ footer {
 a {
   text-decoration: none;
 }
-.links > a:hover {
-  color: rgb(115, 121, 119);
-}
 
 .photo-wrapper{
   display: flex;
   justify-content: center;
+  
 }
 .photo-squares {
   display: flex;
