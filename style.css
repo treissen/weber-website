@@ -1,17 +1,8 @@
-/* .wrapper {
-  display: grid;
-  grid-template-columns: 1fr min(85ch, calc(100% - 64px)) 1fr;
-  grid-column-gap: 32px;
-} */
-/* .wrapper > * {
-  grid-column: 2;
-  border: black solid 1px;
-} */
-/* .full-bleed {
-  width: 100%;
-  grid-column: 1 / -1;
-} */
-/* above is from https://www.joshwcomeau.com/css/full-bleed/  */
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
