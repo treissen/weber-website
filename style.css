@@ -60,6 +60,8 @@ header {
   margin-right: 5vw;
 }
 footer {
+  display: flex;
+  gap: 25px;
   margin-left: 0;
   justify-self: center;
   position: fixed;
@@ -68,17 +70,13 @@ footer {
   height: 45px;
   justify-content: center;
 }
-.footerCenter{
-  display: flex;
-  gap: 25px;
-}
-.footerCenter > a {
+footer > a {
   color: white;
 }
-.footerCenter > a:visited {
+footer > a:visited {
   color: white;
 }
-.footerCenter > a:hover {
+footer > a:hover {
   color: aqua;
 }
 
@@ -206,3 +204,43 @@ a {
   box-shadow: #878a8c 10px 50px 80px 10px;
 }
 
+/*media queries */
+/* tablets */
+@media (max-width: 768px) {
+  .headerRight > * {
+    font-size: 18px;
+  }
+  .content-container{
+    flex-direction: column;
+  }
+  .content-container > * {
+    max-width: 95%;
+  }
+  .footer > * {
+    font-size: 8px;
+  }
+  .sidebar {
+    flex-direction: row;
+    gap: 8px;
+  }
+  .links {
+    
+  }
+  .publicInfo {
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* not workgin rn */
+@media (max-width: 540px) {
+ 
+  .headerRight > * {
+    flex-direction: column;
+  }
+  header {
+    max-height: fit-content;
+  }
+}
