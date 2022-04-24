@@ -271,3 +271,9 @@
     }
   }
   
+  @media (max-width:1000px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+  }
