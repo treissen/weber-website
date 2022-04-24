@@ -16,6 +16,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'proxima-nova', sans-serif;
     
   }
   
@@ -108,10 +109,10 @@
   
   /*  adding boxes and outlines to content */
   .sidebar, .info-container {
-    background-color: #ffffffe7;
+    background-color: #ffffffaa;
     border: 2px solid rgb(17, 15, 15);
     box-shadow: #090f14 10px 50px 80px 10px;
-    border-radius: 8px;
+    border-radius: 1px;
     padding: 15px;
   }
   .title {
@@ -150,7 +151,13 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    color: black;
+    font-weight: bold;
+    font-style: oblique;
 
+  }
+  .links > * {
+    color:black;
   }
   
   .info-container {
