@@ -134,22 +134,22 @@ footer > a:hover {
   min-width: fit-content;
   height: fit-content;
 }
-.links {
-  padding-top: 5px;
+.links,  .districtInfo{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 .links > a:hover {
   color: rgb(115, 121, 119);
 }
-.publicInfo {
-  display: flex;
-  flex-direction: column;
+
+.districtInfo > a:hover {
+  color: rgb(115, 121, 119); 
 }
+
 .districtInfo {
-  display: flex;
-  flex-direction: column;
+ padding-bottom: 10px;
 }
 
 .info-container {
@@ -205,6 +205,25 @@ a {
 }
 
 /*media queries */
+@media (max-width: 371px) {
+  header {
+    height: fit-content;
+  }
+  .title {
+    margin-top:165px;
+  }
+  
+}
+@media (max-width: 526px) {
+ 
+  .headerRight {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header {
+    max-height: fit-content;
+  }
+}
 /* tablets */
 @media (max-width: 768px) {
   .headerRight > * {
@@ -223,24 +242,12 @@ a {
     flex-direction: row;
     gap: 8px;
   }
-  .links {
-    
-  }
-  .publicInfo {
+  .districtInfo {
     max-height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
+  .districtInfo > *
 }
 
-/* not workgin rn */
-@media (max-width: 540px) {
- 
-  .headerRight > * {
-    flex-direction: column;
-  }
-  header {
-    max-height: fit-content;
-  }
-}
+
