@@ -60,15 +60,13 @@ header {
   margin-right: 5vw;
 }
 footer {
-  display: flex;
-  gap: 25px;
+  justify-content: space-around;
   margin-left: 0;
   justify-self: center;
   position: fixed;
   bottom: 0;
   width: 100vw;
   height: 45px;
-  justify-content: center;
 }
 footer > a {
   color: white;
@@ -220,12 +218,26 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
+  .logo {
+    height: 75px;
+  }
+  .logo:hover {
+    height: 50px;
+    box-shadow: inset 0 0 10px rgba(246, 244, 244, 0.25), 0 0 50px rgba(246, 244, 244, 0.5);
+    border-radius: 50%;
+  }
   header {
     max-height: fit-content;
   }
+  /* footer {
+    position: relative;
+    margin-top: 20px;
+  } */
+
 }
+
 /* tablets */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .headerRight > * {
     font-size: 18px;
   }
@@ -235,19 +247,26 @@ a {
   .content-container > * {
     max-width: 95%;
   }
-  .footer > * {
-    font-size: 8px;
+  footer > * {
+    font-size: 15px;
   }
   .sidebar {
     flex-direction: row;
     gap: 8px;
+    min-width: 100%;
   }
   .districtInfo {
     max-height: fit-content;
     display: flex;
     flex-direction: column;
   }
-  .districtInfo > *
+  .photo-desc {
+    font-size: 24px;
+  }
+  .info-container{
+    min-width: 100%;
+  }
+  .photo-squares {
+    flex-direction: column;
+  }
 }
-
-
