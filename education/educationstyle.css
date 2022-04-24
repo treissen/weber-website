@@ -211,13 +211,11 @@
   }
   
   /*  breakpoints */
-  @media (max-width: 371px) {
+  @media (max-width: 380px) {
     header {
       height: fit-content;
     }
-    .title {
-      margin-top:165px;
-    }
+    
     
   }
   @media (max-width: 526px) {
