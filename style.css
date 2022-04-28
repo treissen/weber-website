@@ -215,12 +215,15 @@ a {
 }
 
 /*media queries */
+@media (max-width: 368px) {
+  .title {
+    font-size: 16px;
+    margin-top: 125px;
+  }
+}
 @media (max-width: 380px) {
   header {
     height: fit-content;
-  }
-  .title {
-    margin-top: 165px;
   }
 }
 @media (max-width: 526px) {
