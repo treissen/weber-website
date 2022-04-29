@@ -173,6 +173,7 @@
   .screen {
     display: flex;
     justify-content: center;
+    margin-top: 6vh;
   }
   a {
     text-decoration: none;
@@ -216,11 +217,15 @@
       font-size: 16px;
       margin-top: 125px;
     }
+    
   }
   @media (max-width: 380px) {
     header {
       height: fit-content;
     }   
+    .info-container > p {
+      font-size: smaller;
+    }
   }
   @media (max-width: 526px) {
    
