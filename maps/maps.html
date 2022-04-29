@@ -45,6 +45,57 @@
                     <p>To view our full ULV notification app, click the link above.</p>
                     <style>.embed-container {position: relative; padding-bottom: 60%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style><div class="embed-container"><iframe width="500" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Public Notification (Public View)" src="//webermad.maps.arcgis.com/apps/Embed/index.html?webmap=4c2c5598dc864695a72ec04f7ee2ca0e&extent=-112.4517,41.041,-111.4375,41.4844&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&details=true&legend=true&active_panel=details&basemap_gallery=true&disable_scroll=true&theme=dark"></iframe></div>
                 </div>
+                            
+            </div>
+            <!-- Container for the image gallery -->
+            <div class="container">
+                <h1 class="img-gallery-title">2021 Treatment Maps</h1>
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="../images/airplane-heat.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="../images/drone-heat.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="../images/ground-heat.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="../images/pointLoc-heat.png" style="width:100%">
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../images/airplane-heat.png" style="width:100%" onclick="currentSlide(1)" alt="Airplane Treatments">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/drone-heat.png" style="width:100%" onclick="currentSlide(2)" alt="Drone Treatments">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/ground-heat.png" style="width:100%" onclick="currentSlide(3)" alt="Ground Treatments">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../images/pointLoc-heat.png" style="width:100%" onclick="currentSlide(4)" alt="Point Location Treatments">
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -60,6 +111,37 @@
     </main>
    
     
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 </body>
 </html>
