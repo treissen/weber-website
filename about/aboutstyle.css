@@ -101,7 +101,7 @@ footer > a:hover {
 
 
 /*  adding boxes and outlines to content */
-.sidebar, .info-container, .container {
+.sidebar, .info-container {
   background-color: #fffffff1;
   border: 2px solid rgb(17, 15, 15);
   box-shadow: #090f14 10px 50px 80px 10px;
@@ -257,7 +257,11 @@ a {
   padding: 2px 16px;
   color: white;
 }
-
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 .row:after {
   content: "";
   display: table;
@@ -274,7 +278,11 @@ a {
 
 /* Add a transparency effect for thumnbail images */
 .demo {
-  opacity: 0.6;
+  opacity: 0.8;
+  border: solid rgb(0, 0, 0) 2px;
+  border-radius: 65px;
+  box-shadow: #000000b7 0px 10px 10px 10px;
+  
 }
 
 .active,
