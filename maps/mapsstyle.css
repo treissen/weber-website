@@ -110,7 +110,7 @@
   
   
   /*  adding boxes and outlines to content */
-  .sidebar, .info-container {
+  .sidebar, .info-container, .container{
     background-color: #ffffffaa;
     border: 2px solid rgb(17, 15, 15);
     box-shadow: #090f14 10px 50px 80px 10px;
@@ -191,7 +191,7 @@
     /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
-    max-width: 75vw;
+    max-width: 50vw;
   }
   .img-gallery-title {
     background-color: rgba(240, 248, 255, 0.772);
@@ -336,3 +336,10 @@
     }
     
   }
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 75vw;
+    }
+    
+  }
+ 

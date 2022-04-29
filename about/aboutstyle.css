@@ -39,6 +39,7 @@ header, footer {
   background-color: #012723d4;
   border: solid #42023a 2px;
   box-shadow: inset 0 0 25px rgba(3, 3, 3, 0.87), 0 0 50px rgba(74, 10, 73, 0.504);
+  z-index: 999;
 
 }
 
@@ -100,7 +101,7 @@ footer > a:hover {
 
 
 /*  adding boxes and outlines to content */
-.sidebar, .info-container {
+.sidebar, .info-container, .container {
   background-color: #fffffff1;
   border: 2px solid rgb(17, 15, 15);
   box-shadow: #090f14 10px 50px 80px 10px;
@@ -178,14 +179,107 @@ footer > a:hover {
 .screen {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 a {
   text-decoration: none;
+}
+ /* Position the image container (needed to position the left and right arrows) */
+ .container {
+  position: relative;
+  max-width: 50vw;
+}
+.img-gallery-title {
+  background-color: rgba(240, 248, 255, 0.772);
+  text-align: center;
+  font-size: 2vw;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
 
 .photo-wrapper{
   display: flex;
   justify-content: center;
+  z-index: 999;
   
 }
 .photo-squares {
@@ -299,4 +393,10 @@ a {
   .photo-squares {
     flex-direction: column;
   }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 75vw;
+  }
+  
 }
