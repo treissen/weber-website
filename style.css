@@ -98,7 +98,7 @@ footer > a:hover {
 
 /*  adding boxes and outlines to content */
 .sidebar, .info-container {
-  background-color: #fffffff1;;
+  background-color: #fffffff1;
   border: 2px solid rgb(17, 15, 15);
   box-shadow: #090f14 10px 50px 80px 10px;
   border-radius: 1px;
@@ -197,6 +197,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fffffff1;
 }
 .photo-desc {
   color: white;
