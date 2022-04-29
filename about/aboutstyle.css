@@ -159,23 +159,28 @@ footer > a:hover {
 .info-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   width: 85ch;
   right: 0;
   height: fit-content;
+}
+.info-container > h2 {
+  padding-bottom: 10px;
 }
 .info-container > p {
   line-height: 150%;
   text-indent: 30px;
   font-size: 18px;
-  padding-bottom: 10px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-.info-container > a {
-  color: rgb(5, 5, 139);
-  font-weight: bold;
-  font-size: larger;
+.info-container > ul {
+  align-self: center;
+  line-height: 150%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-}
 .screen {
   display: flex;
   justify-content: center;
